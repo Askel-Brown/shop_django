@@ -1,3 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+def login_register(request):
+    return render(request, 'auth/login-register.html')
+
+def logout_user(request):
+    pass
