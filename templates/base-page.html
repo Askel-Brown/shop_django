@@ -60,9 +60,6 @@
                                         </form>
                                     </div>
                                 </div>
-                                <div class="header-login same-style">
-                                    <a href="{% url 'login_register' %}"><i class="icon-user icons"></i></a>
-                                </div>
                                 <div class="header-cart same-style">
                                     <button class="icon-cart">
                                         <i class="icon-handbag"></i>
@@ -107,6 +104,30 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="header-cart same-style">
+                                    <button class="icon-user-cart">
+                                        {% if user.is_authenticated %}
+                                            {{ user.username }}
+                                            <!-- <i class="icon-user-following icons"></i> -->
+                                        {% else %}
+                                            <i class="icon-user-unfollow icons"></i>
+                                        {% endif %}
+                                    </button>
+                                    <div class="login-cart-content" >
+                                        <ul>
+                                            <li class="single-shopping-cart">
+                                                <a href="{% url 'sign_in' %}"><h5>Войти</h5></a>
+                                            </li>
+                                            <li class="single-shopping-cart">
+                                                <a href="{% url 'sign_up' %}"><h5>Регистрация</h5></a>
+                                            </li>
+                                            <li class="single-shopping-cart">
+                                                <a href="{% url 'logout' %}"><h5>Выйти</h5></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>

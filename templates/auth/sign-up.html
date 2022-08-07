@@ -1,0 +1,57 @@
+{% extends 'base-page.html' %}
+{% load static %}
+
+{% block title %}
+Login
+{% endblock title %}
+
+{% block container %}
+<!-- <div class="breadcrumb-area pt-95 pb-95 bg-img" style="background-image:url(assets/img/banner/banner-2.jpg);">
+    <div class="container">
+        <div class="breadcrumb-content text-center">
+            <h2>Login / Register</h2>
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li class="active">Login / Register</li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+<div class="login-register-area pt-95 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 ml-auto mr-auto">
+                <div class="login-register-wrapper">
+                    <div class="login-register-tab-list nav">
+                        <a class="active" data-toggle="tab" href="#lg1">
+                            <h4> register </h4>
+                        </a>
+                    </div>
+                    <div id="lg2" class="tab-pane">
+                        <div class="login-form-container">
+                            <div class="login-register-form">
+                                <form action="{% url 'sign_up' %}" method="post">
+                                    {% csrf_token %}
+                                    {% for field in user_form %}
+                                    <span style="color: red;"> {{ field.errors }} </span>
+                                    {{ field.label_tag }}
+                                    {{ field }}
+                                    {% endfor %}
+                                    <div class="button-box">
+                                        <button type="submit"><span>Register</span></button>
+                                    </div>
+                                    <!-- {{ user_form }} -->
+                                    
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock container %} 
+
+

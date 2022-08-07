@@ -1721,6 +1721,25 @@ button.icon-cart span.count-style {
     width: 340px;
     z-index: 9999;
 }
+.login-cart-content {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    display: none;
+    padding: 20px 35px 10px;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 170px;
+    z-index: 9999;
+}
+.login-cart-content ul li {
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
 .shopping-cart-content ul li {
     border-bottom: 1px solid #ebebeb;
     display: flex;
@@ -4309,11 +4328,15 @@ h5.panel-title span {
 /*------------------------
     10. Login register page
 --------------------------*/
+.auth-error {
+    color: red;
+    margin-bottom: 20px;
+}
 
 .login-form-container {
     background: transparent none repeat scroll 0 0;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
-    padding: 80px;
+    padding: 40px;
     text-align: left;
 }
 .login-text {

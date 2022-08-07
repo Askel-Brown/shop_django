@@ -11,6 +11,11 @@
     $(".icon-cart").on("click", function() {
         $(this).parent().find('.shopping-cart-content').slideToggle('medium');
     })
+
+    /* user */
+    $(".icon-user-cart").on("click", function() {
+        $(this).parent().find('.login-cart-content').slideToggle('medium');
+    })
     
     /*--
 	Header Search Toggle
