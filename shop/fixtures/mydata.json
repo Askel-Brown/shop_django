@@ -65,6 +65,84 @@
         }
     },
     {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2022-08-08T09:59:29.616Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "user - 12345",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2022-08-08T09:59:45.460Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "user2 - 23.0",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2022-08-08T10:00:24.733Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "user - 2 - 2_waiting_for_payment",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2022-08-08T10:00:42.187Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "user2 - 43 - 3_paid",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2022-08-08T10:01:00.571Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "viski - 23.49 - 12.00",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2022-08-08T10:01:20.208Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "vine - 10.99 - 11",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
         "model": "auth.permission",
         "pk": 1,
         "fields": {
@@ -496,7 +574,24 @@
             "user_permissions": []
         }
     },
-    
+    {
+        "model": "auth.user",
+        "pk": 7,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$weLv1uXGcocHC7NaNWvM5D$YQRhCdnf+PrrzNoe+0Ib1wx+EPjifmVxateuWjcgvbQ=",
+            "last_login": "2022-08-07T16:23:32.363Z",
+            "is_superuser": false,
+            "username": "user4",
+            "first_name": "",
+            "last_name": "",
+            "email": "asdasf@asd.re",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2022-08-07T16:23:31.245Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
     {
         "model": "auth.user",
         "pk": 8,
@@ -637,6 +732,72 @@
             "unit": null,
             "image_url": null,
             "mote": ""
+        }
+    },
+    {
+        "model": "shop.payment",
+        "pk": 1,
+        "fields": {
+            "user": 4,
+            "amount": "12345.00",
+            "time": "2022-08-08T09:59:29.614Z",
+            "comment": "asdfawfq"
+        }
+    },
+    {
+        "model": "shop.payment",
+        "pk": 2,
+        "fields": {
+            "user": 5,
+            "amount": "23.00",
+            "time": "2022-08-08T09:59:45.456Z",
+            "comment": "qwsa"
+        }
+    },
+    {
+        "model": "shop.order",
+        "pk": 1,
+        "fields": {
+            "user": 4,
+            "status": "2_waiting_for_payment",
+            "amount": "2.00",
+            "creation_time": "2022-08-08T10:00:24.731Z",
+            "payment": 1,
+            "comment": ""
+        }
+    },
+    {
+        "model": "shop.order",
+        "pk": 2,
+        "fields": {
+            "user": 5,
+            "status": "3_paid",
+            "amount": "43.00",
+            "creation_time": "2022-08-08T10:00:42.185Z",
+            "payment": 2,
+            "comment": "vn"
+        }
+    },
+    {
+        "model": "shop.orderitem",
+        "pk": 1,
+        "fields": {
+            "order": 1,
+            "product": 3,
+            "quantity": 5,
+            "price": "12.00",
+            "discount": "0.00"
+        }
+    },
+    {
+        "model": "shop.orderitem",
+        "pk": 2,
+        "fields": {
+            "order": 2,
+            "product": 1,
+            "quantity": 10,
+            "price": "11.00",
+            "discount": "20.00"
         }
     }
 ]

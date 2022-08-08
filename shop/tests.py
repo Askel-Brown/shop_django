@@ -16,10 +16,31 @@ class TestDataBase(TestCase):
         users = User.objects.all()
         users_number = users.count()
         user = users.first()
-        self.assertEqual(users_number, 5)
+        self.assertEqual(users_number, 6)
         self.assertEqual(user.username, 'boomee')
         self.assertTrue(user.is_superuser)
 
     def test_user_check_password(self):
         self.assertTrue(self.user.check_password('27452644'))
 
+    def test_all_data(self):
+        self.assertGreater(Product.objects.all().count(), 0)
+        self.assertGreater(Order.objects.all().count(), 0)
+        self.assertGreater(OrderItem.objects.all().count(), 0)
+        self.assertGreater(Payment.objects.all().count(), 0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
