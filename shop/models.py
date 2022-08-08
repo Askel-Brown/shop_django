@@ -10,12 +10,25 @@ class Product(models.Model):
     image_url = models.URLField(blank=True, null=True)
     mote = models.TextField(blank=True, null=True)
 
+    class Meta:
+        ordering = ['pk']
+
+    def __str__(self):
+        return f"{self.name} - {self.price}"
+
 
 class Payment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     amount = models.DecimalField(max_digits=20, decimal_places=2, blank=True, null=True)
     time = models.DateTimeField(auto_now_add=True)
     comment = models.TextField(blank=True, null=True)
+
+    class Meta:
+        ordering = ['pk']
+
+    def __str__(self):
+        return f"{self.user} - {self.amount}"
+
 
 class Order(models.Model):
     STATUS_CART = '1_cart'
@@ -34,6 +47,12 @@ class Order(models.Model):
     payment = models.ForeignKey(Payment, on_delete=models.PROTECT, blank=True, null=True)
     comment = models.TextField(blank=True, null=True)
 
+    class Meta:
+        ordering = ['pk']
+
+    def __str__(self):
+        return f"{self.user} - {self.amount} - {self.status}"
+
 
 class OrderItem(models.Model):
     order = models.ForeignKey(Order, on_delete=models.CASCADE)
@@ -41,6 +60,14 @@ class OrderItem(models.Model):
     quantity = models.PositiveIntegerField(default=1)
     price = models.DecimalField(max_digits=20, decimal_places=2)
     discount = models.DecimalField(max_digits=20, decimal_places=2, default=0)
+
+    class Meta:
+        ordering = ['pk']
+
+    def __str__(self):
+        return f"{self.product} - {self.price}"
+
+
 
 
 
