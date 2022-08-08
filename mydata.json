@@ -143,6 +143,240 @@
         }
     },
     {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2022-08-08T10:28:24.534Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "viski - 23.49 - 12.00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2022-08-08T10:28:24.687Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "vine - 10.99 - 11.00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2022-08-08T10:28:33.607Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "user - 2.00 - 2_waiting_for_payment",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2022-08-08T10:28:33.809Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "user2 - 43.00 - 3_paid",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2022-08-08T10:28:46.566Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "user - 12345.00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2022-08-08T10:28:46.765Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "user2 - 23.00",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2022-08-08T10:28:55.690Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "vine - 10.99",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2022-08-08T10:28:55.788Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "beer - 4.99",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2022-08-08T10:28:55.865Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "viski - 23.49",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2022-08-08T10:29:07.637Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "4",
+            "object_repr": "user",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2022-08-08T10:29:07.843Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "5",
+            "object_repr": "user2",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2022-08-08T10:29:07.944Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "6",
+            "object_repr": "user3",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2022-08-08T10:29:08.032Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "7",
+            "object_repr": "user4",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2022-08-08T10:29:08.111Z",
+            "user": 1,
+            "content_type": 4,
+            "object_id": "8",
+            "object_repr": "user5",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2022-08-08T10:29:36.582Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "4",
+            "object_repr": "vine - 11",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2022-08-08T10:30:05.313Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "boomee - 5",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2022-08-08T10:30:21.467Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "boomee - 4 - 2_waiting_for_payment",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2022-08-08T10:30:54.880Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "vine - 11.00 - 23",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
         "model": "auth.permission",
         "pk": 1,
         "fields": {
@@ -521,96 +755,6 @@
         }
     },
     {
-        "model": "auth.user",
-        "pk": 4,
-        "fields": {
-            "password": "pbkdf2_sha256$320000$3lhCD4WjJvmdpZPQOeyaMA$VUc+ipodLvz1w+rFQ6OekZelXzJmWZe5UcrhoRR+zwE=",
-            "last_login": "2022-08-07T16:07:35.330Z",
-            "is_superuser": false,
-            "username": "user",
-            "first_name": "",
-            "last_name": "",
-            "email": "",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2022-08-07T16:07:34.576Z",
-            "groups": [],
-            "user_permissions": []
-        }
-    },
-    {
-        "model": "auth.user",
-        "pk": 5,
-        "fields": {
-            "password": "pbkdf2_sha256$320000$AH82g9bofiWFZ36CbVCidQ$Uy6NReWTQiZogiPOrNVlEar+oZeuJ1YBnW2hdlcEGjQ=",
-            "last_login": "2022-08-07T16:17:53.945Z",
-            "is_superuser": false,
-            "username": "user2",
-            "first_name": "",
-            "last_name": "",
-            "email": "usser@dasd.wae",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2022-08-07T16:17:53.252Z",
-            "groups": [],
-            "user_permissions": []
-        }
-    },
-    {
-        "model": "auth.user",
-        "pk": 6,
-        "fields": {
-            "password": "pbkdf2_sha256$320000$pt7brl8sNNcLhU0jmU5w5J$W8Dr3cq5lJNB4D0OiMcR8BJMrk6mh7WuhaMIArs1/uI=",
-            "last_login": "2022-08-07T16:18:36.395Z",
-            "is_superuser": false,
-            "username": "user3",
-            "first_name": "",
-            "last_name": "",
-            "email": "asdafa@dsad.wq",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2022-08-07T16:18:35.287Z",
-            "groups": [],
-            "user_permissions": []
-        }
-    },
-    {
-        "model": "auth.user",
-        "pk": 7,
-        "fields": {
-            "password": "pbkdf2_sha256$320000$weLv1uXGcocHC7NaNWvM5D$YQRhCdnf+PrrzNoe+0Ib1wx+EPjifmVxateuWjcgvbQ=",
-            "last_login": "2022-08-07T16:23:32.363Z",
-            "is_superuser": false,
-            "username": "user4",
-            "first_name": "",
-            "last_name": "",
-            "email": "asdasf@asd.re",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2022-08-07T16:23:31.245Z",
-            "groups": [],
-            "user_permissions": []
-        }
-    },
-    {
-        "model": "auth.user",
-        "pk": 8,
-        "fields": {
-            "password": "pbkdf2_sha256$320000$qyakjr2u4EhYHS14cVDC8P$brXGO+Z3loWrJjZTfKLIXTGSoL9Xava1jawMpooHTnk=",
-            "last_login": "2022-08-07T16:25:20.088Z",
-            "is_superuser": false,
-            "username": "user5",
-            "first_name": "",
-            "last_name": "",
-            "email": "asdf@sad.wq12",
-            "is_staff": false,
-            "is_active": true,
-            "date_joined": "2022-08-07T16:25:18.635Z",
-            "groups": [],
-            "user_permissions": []
-        }
-    },
-    {
         "model": "contenttypes.contenttype",
         "id": 1,
         "fields": {
@@ -700,104 +844,47 @@
     },
     {
         "model": "shop.product",
-        "pk": 1,
+        "pk": 4,
         "fields": {
             "name": "vine",
-            "code": "231",
-            "price": "10.99",
+            "code": "221",
+            "price": "11.00",
             "unit": null,
             "image_url": null,
-            "mote": ""
+            "note": "винишко"
         }
     },
     {
-        "model": "shop.product",
-        "pk": 2,
-        "fields": {
-            "name": "beer",
-            "code": "211",
-            "price": "4.99",
-            "unit": null,
-            "image_url": null,
-            "mote": ""
-        }
-    },
-    {
-        "model": "shop.product",
+        "model": "shop.payment",
         "pk": 3,
         "fields": {
-            "name": "viski",
-            "code": "221",
-            "price": "23.49",
-            "unit": null,
-            "image_url": null,
-            "mote": ""
-        }
-    },
-    {
-        "model": "shop.payment",
-        "pk": 1,
-        "fields": {
-            "user": 4,
-            "amount": "12345.00",
-            "time": "2022-08-08T09:59:29.614Z",
-            "comment": "asdfawfq"
-        }
-    },
-    {
-        "model": "shop.payment",
-        "pk": 2,
-        "fields": {
-            "user": 5,
-            "amount": "23.00",
-            "time": "2022-08-08T09:59:45.456Z",
-            "comment": "qwsa"
-        }
-    },
-    {
-        "model": "shop.order",
-        "pk": 1,
-        "fields": {
-            "user": 4,
-            "status": "2_waiting_for_payment",
-            "amount": "2.00",
-            "creation_time": "2022-08-08T10:00:24.731Z",
-            "payment": 1,
+            "user": 1,
+            "amount": "5.00",
+            "time": "2022-08-08T10:30:05.311Z",
             "comment": ""
         }
     },
     {
         "model": "shop.order",
-        "pk": 2,
+        "pk": 3,
         "fields": {
-            "user": 5,
-            "status": "3_paid",
-            "amount": "43.00",
-            "creation_time": "2022-08-08T10:00:42.185Z",
-            "payment": 2,
-            "comment": "vn"
+            "user": 1,
+            "status": "2_waiting_for_payment",
+            "amount": "4.00",
+            "creation_time": "2022-08-08T10:30:21.465Z",
+            "payment": 3,
+            "comment": ""
         }
     },
     {
         "model": "shop.orderitem",
-        "pk": 1,
+        "pk": 3,
         "fields": {
-            "order": 1,
-            "product": 3,
-            "quantity": 5,
-            "price": "12.00",
-            "discount": "0.00"
-        }
-    },
-    {
-        "model": "shop.orderitem",
-        "pk": 2,
-        "fields": {
-            "order": 2,
-            "product": 1,
-            "quantity": 10,
-            "price": "11.00",
-            "discount": "20.00"
+            "order": 3,
+            "product": 4,
+            "quantity": 2,
+            "price": "23.00",
+            "discount": "15.00"
         }
     }
 ]
